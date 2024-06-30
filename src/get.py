@@ -5,7 +5,8 @@ import todoList
 
 def get(event, context):
     # create a response
-    item = todoList.get_item(event['pathParameters']['id'])
+    item_id = event.get('pathParameters', {}).get('id')
+    item = todoList.get_item(item_id)
     if item:
         response = {
             "statusCode": 200,
