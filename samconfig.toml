@@ -10,6 +10,7 @@ capabilities = "CAPABILITY_IAM"
 parameter_overrides = "Stage=\"default\""
 image_repositories = []
 
+
 [staging]
 [staging.deploy]
 [staging.deploy.parameters]
