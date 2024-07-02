@@ -169,7 +169,7 @@ class TestApi(unittest.TestCase):
         )
         print('End - integration test Update TODO')
 
-    @pytest.mark.readonly
+    
     def test_api_deletetodo(self):
         print('---------------------------------------')
         print('Starting - integration test Delete TODO')
